@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco Cartel | Luxury Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/logo.jpg" alt="Coco Cartel Logo">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Collections</a></li>
+                <li><a href="about.html" class="nav-link">Our Story</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </a>
+                <a href="cart.html" class="nav-icon" aria-label="Cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="dashboard.html" class="nav-icon" aria-label="Account">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Split-Screen Hero -->
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <div class="hero-content">
+                <p class="hero-label">Est. 2024</p>
+                <h1 class="hero-headline">Where Elegance<br>Meets Eternity</h1>
+                <p class="hero-subtext">Handcrafted luxury jewelry for the modern muse. Each piece tells a story of timeless sophistication.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn-primary">Explore Collections</a>
+                    <a href="about.html" class="btn-secondary">Our Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-right">
+            <!-- HERO JEWELRY IMAGE -->
+            <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/hero.jpg" alt="Luxury Jewelry" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee">
+        <div class="marquee-track">
+            <span class="marquee-text">SHIPPING WORLDWIDE</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">HANDCRAFTED</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">TIMELESS</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">BOLD</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">ELEGANT</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">LUXURY</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">SHIPPING WORLDWIDE</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">HANDCRAFTED</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">TIMELESS</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">BOLD</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">ELEGANT</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">LUXURY</span>
+            <span class="marquee-dot">•</span>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="collections" id="collections">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">The Edit</span>
+                <h2 class="section-title">Featured Collections</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card fade-in">
+                    <div class="collection-image">
+                        <!-- RING COLLECTION IMAGE -->
+                        <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/ring1.jpg" alt="Rings Collection">
+                        <div class="collection-overlay">
+                            <a href="products.html?category=rings" class="collection-link">Discover</a>
+                        </div>
+                    </div>
+                    <h3 class="collection-name">Rings</h3>
+                    <div class="collection-underline"></div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-image">
+                        <!-- NECKLACE COLLECTION IMAGE -->
+                        <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/astrologynecklace.jpg" alt="Necklaces Collection">
+                        <div class="collection-overlay">
+                            <a href="products.html?category=necklaces" class="collection-link">Discover</a>
+                        </div>
+                    </div>
+                    <h3 class="collection-name">Necklaces</h3>
+                    <div class="collection-underline"></div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-image">
+                        <!-- BRACELET COLLECTION IMAGE -->
+                        <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/bracelet1.jpg" alt="Bracelets Collection">
+                        <div class="collection-overlay">
+                            <a href="products.html?category=bracelets" class="collection-link">Discover</a>
+                        </div>
+                    </div>
+                    <h3 class="collection-name">Bracelets</h3>
+                    <div class="collection-underline"></div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-image">
+                        <!-- WATCH COLLECTION IMAGE -->
+                        <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/watch1.jpg" alt="Watches Collection">
+                        <div class="collection-overlay">
+                            <a href="products.html?category=watches" class="collection-link">Discover</a>
+                        </div>
+                    </div>
+                    <h3 class="collection-name">Watches</h3>
+                    <div class="collection-underline"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story" id="about">
+        <div class="story-section">
+            <div class="story-image fade-in">
+                <!-- BRAND STORY IMAGE 1 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/model1.jpg" alt="Coco Cartel Craftsmanship">
+            </div>
+            <div class="story-content fade-in">
+                <span class="section-label">Our Heritage</span>
+                <h2 class="story-title">Crafted for the<br>Extraordinary</h2>
+                <div class="section-line"></div>
+                <p class="story-text">Every Coco Cartel piece begins with a single vision: to create jewelry that transcends time. Our artisans combine centuries-old techniques with contemporary design, using only ethically sourced precious metals and gemstones.</p>
+                <p class="story-text">From the initial sketch to the final polish, each creation undergoes over 40 hours of meticulous handcrafting. This is not jewelry. This is wearable art.</p>
+                <a href="about.html" class="btn-text">Read Our Story →</a>
+            </div>
+        </div>
+        <div class="story-section reverse">
+            <div class="story-content fade-in">
+                <span class="section-label">The Process</span>
+                <h2 class="story-title">Where Science<br>Meets Soul</h2>
+                <div class="section-line"></div>
+                <p class="story-text">We believe luxury should feel personal. That's why every piece is made to order, tailored to the unique story of its wearer. Our design studio in Paris collaborates with master jewelers across three continents.</p>
+                <p class="story-text">The result? Collections that feel both timeless and urgently modern — jewelry that doesn't just accessorize, but transforms.</p>
+                <a href="about.html" class="btn-text">Explore Craftsmanship →</a>
+            </div>
+            <div class="story-image fade-in">
+                <!-- BRAND STORY IMAGE 2 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/model2.jpg" alt="Coco Cartel Design Process">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="bestsellers" id="bestsellers">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Most Loved</span>
+                <h2 class="section-title">Bestsellers</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="bestsellers-grid">
+                <div class="bestseller-large fade-in">
+                    <div class="bestseller-image">
+                        <!-- BESTSELLER FEATURED IMAGE -->
+                        <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/jadebracelet.jpg" alt="Jade Bracelet">
+                        <div class="bestseller-badge">Best Seller</div>
+                    </div>
+                    <div class="bestseller-info">
+                        <h3 class="bestseller-name">Jade Eternity Bracelet</h3>
+                        <p class="bestseller-price">$2,400</p>
+                        <a href="product.html?id=jade-bracelet" class="btn-text-gold">View Details →</a>
+                    </div>
+                </div>
+                <div class="bestseller-small-grid">
+                    <div class="bestseller-small fade-in">
+                        <div class="bestseller-small-image">
+                            <!-- BESTSELLER IMAGE 2 -->
+                            <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/ring2.jpg" alt="Gold Signet Ring">
+                        </div>
+                        <h4 class="bestseller-small-name">Gold Signet Ring</h4>
+                        <p class="bestseller-small-price">$890</p>
+                    </div>
+                    <div class="bestseller-small fade-in">
+                        <div class="bestseller-small-image">
+                            <!-- BESTSELLER IMAGE 3 -->
+                            <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/watch2.jpg" alt="Minimalist Watch">
+                        </div>
+                        <h4 class="bestseller-small-name">Minimalist Watch</h4>
+                        <p class="bestseller-small-price">$1,650</p>
+                    </div>
+                    <div class="bestseller-small fade-in">
+                        <div class="bestseller-small-image">
+                            <!-- BESTSELLER IMAGE 4 -->
+                            <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/bracelet2.jpg" alt="Chain Bracelet">
+                        </div>
+                        <h4 class="bestseller-small-name">Chain Bracelet</h4>
+                        <p class="bestseller-small-price">$720</p>
+                    </div>
+                    <div class="bestseller-small fade-in">
+                        <div class="bestseller-small-image">
+                            <!-- BESTSELLER IMAGE 5 -->
+                            <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/ring3.jpg" alt="Diamond Band">
+                        </div>
+                        <h4 class="bestseller-small-name">Diamond Band</h4>
+                        <p class="bestseller-small-price">$3,200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="testimonial-content fade-in">
+                <span class="testimonial-quote-mark">"</span>
+                <blockquote class="testimonial-quote">Coco Cartel doesn't just sell jewelry. They curate moments of pure elegance. My engagement ring from their collection draws compliments everywhere I go.</blockquote>
+                <div class="testimonial-author">
+                    <p class="testimonial-name">— Amara Okafor</p>
+                    <p class="testimonial-title">Lagos, Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Gallery -->
+    <section class="lifestyle-gallery" id="gallery">
+        <div class="section-header fade-in">
+            <span class="section-label">The Coco Life</span>
+            <h2 class="section-title">Lifestyle Gallery</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="gallery-scroll">
+            <div class="gallery-item">
+                <!-- LIFESTYLE IMAGE 1 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/aestheticbanner1.jpg" alt="Lifestyle">
+            </div>
+            <div class="gallery-item">
+                <!-- LIFESTYLE IMAGE 2 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/aestheticbanner2.jpg" alt="Lifestyle">
+            </div>
+            <div class="gallery-item">
+                <!-- LIFESTYLE IMAGE 3 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/collection1.jpg" alt="Lifestyle">
+            </div>
+            <div class="gallery-item">
+                <!-- LIFESTYLE IMAGE 4 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/collection2.jpg" alt="Lifestyle">
+            </div>
+            <div class="gallery-item">
+                <!-- LIFESTYLE IMAGE 5 -->
+                <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/bracelet2onamodelshand.jpg" alt="Lifestyle">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-inner">
+            <div class="newsletter-left">
+                <span class="newsletter-label">Join the Inner Circle</span>
+                <h2 class="newsletter-title">Be the First<br>to Know</h2>
+                <p class="newsletter-text">Exclusive collections, private sales, and stories from the atelier — delivered to your inbox.</p>
+            </div>
+            <div class="newsletter-right">
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                <p class="newsletter-note">By subscribing, you agree to receive marketing emails from Coco Cartel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Coco Cartel</h3>
+                    <p class="footer-tagline">Where elegance meets eternity.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Shop</h4>
+                        <a href="products.html?category=rings">Rings</a>
+                        <a href="products.html?category=necklaces">Necklaces</a>
+                        <a href="products.html?category=bracelets">Bracelets</a>
+                        <a href="products.html?category=watches">Watches</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">Our Story</a>
+                        <a href="about.html#craftsmanship">Craftsmanship</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="contact.html#careers">Careers</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">Shipping & Returns</a>
+                        <a href="#">Size Guide</a>
+                        <a href="#">Care Instructions</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> Coco Cartel. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0"></path><circle cx="12" cy="12" r="10"></circle></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
