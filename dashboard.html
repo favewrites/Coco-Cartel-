@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Coco Cartel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/logo.jpg" alt="Coco Cartel Logo">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link">Collections</a></li>
+      <li><a href="about.html" class="nav-link">Our Story</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+      </a>
+      <a href="cart.html" class="nav-icon" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <a href="dashboard.html" class="nav-icon active" aria-label="Account">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="page-header-content">
+    <span class="section-label">Welcome Back</span>
+    <h1 class="page-title">My Account</h1>
+    <div class="section-line"></div>
+  </div>
+</section>
+
+<!-- Dashboard Section -->
+<section class="dashboard-section">
+  <div class="section-container">
+    <div class="dashboard-grid">
+
+      <!-- Sidebar -->
+      <aside class="dashboard-sidebar fade-in">
+        <div class="dashboard-profile">
+          <div class="profile-avatar" id="profileAvatar">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <div class="profile-info">
+            <p class="profile-name" id="profileName">Guest</p>
+            <p class="profile-email" id="profileEmail">Not logged in</p>
+          </div>
+        </div>
+
+        <nav class="dashboard-nav">
+          <button class="dash-nav-item active" data-tab="overview">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+            Overview
+          </button>
+          <button class="dash-nav-item" data-tab="orders">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+            My Orders
+          </button>
+          <button class="dash-nav-item" data-tab="wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            Wishlist
+          </button>
+          <button class="dash-nav-item" data-tab="profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            Profile Settings
+          </button>
+          <button class="dash-nav-item" data-tab="password">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Change Password
+          </button>
+          <button class="dash-nav-item dash-logout" id="logoutBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            Log Out
+          </button>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="dashboard-content fade-in">
+
+        <!-- Overview Tab -->
+        <div class="dash-tab active" id="tab-overview">
+          <h2 class="dash-tab-title">Overview</h2>
+
+          <div class="dash-stats">
+            <div class="dash-stat">
+              <span class="dash-stat-number" id="statOrders">0</span>
+              <span class="dash-stat-label">Total Orders</span>
+            </div>
+            <div class="dash-stat">
+              <span class="dash-stat-number" id="statWishlist">0</span>
+              <span class="dash-stat-label">Wishlist Items</span>
+            </div>
+            <div class="dash-stat">
+              <span class="dash-stat-number" id="statPending">0</span>
+              <span class="dash-stat-label">Pending Deliveries</span>
+            </div>
+          </div>
+
+          <div class="dash-recent">
+            <h3 class="dash-section-title">Recent Orders</h3>
+            <div class="dash-empty-state" id="recentOrdersEmpty">
+              <p>You haven't placed any orders yet.</p>
+              <a href="products.html" class="btn-text">Start Shopping →</a>
+            </div>
+            <div class="dash-orders-list" id="recentOrdersList" style="display:none;"></div>
+          </div>
+        </div>
+
+        <!-- Orders Tab -->
+        <div class="dash-tab" id="tab-orders">
+          <h2 class="dash-tab-title">My Orders</h2>
+          <div class="dash-empty-state" id="allOrdersEmpty">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path></svg>
+            <p>No orders found.</p>
+            <a href="products.html" class="btn-primary">Shop Now</a>
+          </div>
+          <div class="dash-orders-list" id="allOrdersList" style="display:none;"></div>
+        </div>
+
+        <!-- Wishlist Tab -->
+        <div class="dash-tab" id="tab-wishlist">
+          <h2 class="dash-tab-title">My Wishlist</h2>
+          <div class="dash-empty-state" id="dashWishlistEmpty">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <p>Your wishlist is empty.</p>
+            <a href="wishlist.html" class="btn-primary">View Wishlist</a>
+          </div>
+        </div>
+
+        <!-- Profile Tab -->
+        <div class="dash-tab" id="tab-profile">
+          <h2 class="dash-tab-title">Profile Settings</h2>
+          <form class="dash-form" id="profileForm">
+            <div class="dash-form-grid">
+              <div class="form-group">
+                <label class="form-label">First Name</label>
+                <input type="text" id="firstNameInput" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input type="text" id="lastNameInput" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" id="emailInput" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" id="phoneInput" placeholder="Phone Number">
+            </div>
+            <button type="submit" class="btn-primary">Save Changes</button>
+          </form>
+        </div>
+
+        <!-- Password Tab -->
+        <div class="dash-tab" id="tab-password">
+          <h2 class="dash-tab-title">Change Password</h2>
+          <form class="dash-form" id="passwordForm">
+            <div class="form-group">
+              <label class="form-label">Current Password</label>
+              <input type="password" id="currentPassword" placeholder="Current Password">
+            </div>
+            <div class="form-group">
+              <label class="form-label">New Password</label>
+              <input type="password" id="newPassword" placeholder="New Password (min. 6 characters)">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Confirm New Password</label>
+              <input type="password" id="confirmPassword" placeholder="Confirm New Password">
+            </div>
+            <button type="submit" class="btn-primary">Update Password</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Login Modal (shown if not logged in) -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <div class="modal-tabs">
+      <button class="modal-tab active" id="loginTabBtn">Sign In</button>
+      <button class="modal-tab" id="registerTabBtn">Create Account</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="modal-form active" id="loginForm">
+      <h2 class="modal-title">Welcome Back</h2>
+      <p class="modal-subtitle">Sign in to access your account</p>
+      <form id="loginFormEl">
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" id="loginEmail" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" id="loginPassword" required>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;">Sign In</button>
+      </form>
+      <p class="modal-switch">
+        <a href="#" id="forgotPasswordLink">Forgot your password?</a>
+      </p>
+    </div>
+
+    <!-- Register Form -->
+    <div class="modal-form" id="registerForm">
+      <h2 class="modal-title">Join Coco Cartel</h2>
+      <p class="modal-subtitle">Create your account to get started</p>
+      <form id="registerFormEl">
+        <div class="dash-form-grid">
+          <div class="form-group">
+            <input type="text" placeholder="First Name" id="regFirstName" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Last Name" id="regLastName" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" id="regEmail" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password (min. 6 characters)" id="regPassword" required>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;">Create Account</button>
+      </form>
+    </div>
+
+    <div class="modal-message" id="modalMessage"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Coco Cartel</h3>
+        <p class="footer-tagline">Where elegance meets eternity.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <a href="products.html?category=rings">Rings</a>
+          <a href="products.html?category=necklaces">Necklaces</a>
+          <a href="products.html?category=bracelets">Bracelets</a>
+          <a href="products.html?category=watches">Watches</a>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html#craftsmanship">Craftsmanship</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html#careers">Careers</a>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Size Guide</a>
+          <a href="#">Care Instructions</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Coco Cartel. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        <a href="#" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0"></path><circle cx="12" cy="12" r="10"></circle></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

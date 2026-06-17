@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist | Coco Cartel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/logo.jpg" alt="Coco Cartel Logo">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link">Collections</a></li>
+      <li><a href="about.html" class="nav-link">Our Story</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="wishlist.html" class="nav-icon active" aria-label="Wishlist">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+      </a>
+      <a href="cart.html" class="nav-icon" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <a href="dashboard.html" class="nav-icon" aria-label="Account">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="page-header-content">
+    <span class="section-label">Your Favourites</span>
+    <h1 class="page-title">Wishlist</h1>
+    <div class="section-line"></div>
+    <p class="page-subtext">Pieces you love, saved for when the moment is right.</p>
+  </div>
+</section>
+
+<!-- Wishlist Section -->
+<section class="wishlist-section">
+  <div class="section-container">
+
+    <!-- Empty State -->
+    <div class="wishlist-empty" id="wishlistEmpty">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+      </svg>
+      <h3>Your wishlist is empty</h3>
+      <p>Save your favourite pieces and come back to them anytime.</p>
+      <a href="products.html" class="btn-primary">Explore Collections</a>
+    </div>
+
+    <!-- Wishlist Grid (shown when items exist) -->
+    <div class="wishlist-grid" id="wishlistGrid">
+      <!-- Wishlist items injected by JS -->
+    </div>
+
+    <!-- Wishlist Actions -->
+    <div class="wishlist-actions" id="wishlistActions" style="display:none;">
+      <button class="btn-secondary" id="clearWishlistBtn">Clear Wishlist</button>
+      <a href="products.html" class="btn-primary">Continue Shopping</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- You May Also Like -->
+<section class="collections">
+  <div class="section-container">
+    <div class="section-header fade-in">
+      <span class="section-label">Discover More</span>
+      <h2 class="section-title">You May Also Like</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="collections-grid">
+      <div class="collection-card fade-in">
+        <div class="collection-image">
+          <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/ring1.jpg" alt="Rings">
+          <div class="collection-overlay">
+            <a href="products.html?category=rings" class="collection-link">Discover</a>
+          </div>
+        </div>
+        <h3 class="collection-name">Rings</h3>
+        <div class="collection-underline"></div>
+      </div>
+      <div class="collection-card fade-in">
+        <div class="collection-image">
+          <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/astrologynecklace.jpg" alt="Necklaces">
+          <div class="collection-overlay">
+            <a href="products.html?category=necklaces" class="collection-link">Discover</a>
+          </div>
+        </div>
+        <h3 class="collection-name">Necklaces</h3>
+        <div class="collection-underline"></div>
+      </div>
+      <div class="collection-card fade-in">
+        <div class="collection-image">
+          <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/bracelet1.jpg" alt="Bracelets">
+          <div class="collection-overlay">
+            <a href="products.html?category=bracelets" class="collection-link">Discover</a>
+          </div>
+        </div>
+        <h3 class="collection-name">Bracelets</h3>
+        <div class="collection-underline"></div>
+      </div>
+      <div class="collection-card fade-in">
+        <div class="collection-image">
+          <img src="https://raw.githubusercontent.com/favewrites/Coco-Cartel-/main/watch1.jpg" alt="Watches">
+          <div class="collection-overlay">
+            <a href="products.html?category=watches" class="collection-link">Discover</a>
+          </div>
+        </div>
+        <h3 class="collection-name">Watches</h3>
+        <div class="collection-underline"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Coco Cartel</h3>
+        <p class="footer-tagline">Where elegance meets eternity.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <a href="products.html?category=rings">Rings</a>
+          <a href="products.html?category=necklaces">Necklaces</a>
+          <a href="products.html?category=bracelets">Bracelets</a>
+          <a href="products.html?category=watches">Watches</a>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html#craftsmanship">Craftsmanship</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html#careers">Careers</a>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Size Guide</a>
+          <a href="#">Care Instructions</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Coco Cartel. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+        <a href="#" aria-label="Pinterest"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0"></path><circle cx="12" cy="12" r="10"></circle></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
