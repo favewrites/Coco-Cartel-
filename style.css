@@ -1914,6 +1914,8 @@ img {
   display: flex;
   border-bottom: 1.5px solid var(--cream-dark);
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .modal-tab {
@@ -1931,6 +1933,8 @@ img {
   border-bottom: 2px solid transparent;
   margin-bottom: -1.5px;
   transition: var(--transition-smooth);
+  position: relative;
+  z-index: 10;
 }
 
 .modal-tab.active {
